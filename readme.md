@@ -2,9 +2,9 @@
 
 A repository containing a number of projects to convert Java code to TypeScript, using the java2typescript node package. The projects are of different complexity:
 
-* [simple](simple) - Shows the conversion of a simple Java class (an Enum) to TypeScript. It contains only the minimal required configuration settings.
-* [antlr4](antlr4) - A complex setup to convert the entire ANTLR4 Java runtime to Typescript. Being able to do that was the original idea of the java2typescript project. Like the simple setup it uses the `convert` script from java2typescript and a configuration file for conversion. This project requires a copy of the [ANTLR4 repository](https://github.com/antlr/antlr4) to be present in the same parent directory as this project.
-* [jdk-tests](jdk-tests) - This project does a custom setup for conversion. It does not use the `convert` script from java2typescript, but instead comes with an own script that allows to do more detailed setup. This project requires a copy of the [OpenJDK repository](https://github.com/openjdk/jdk) to be present in the same parent directory as this project.
+* [simple](src/simple) - Shows the conversion of a simple Java class (an Enum) to TypeScript. It contains only the minimal required configuration settings.
+* [antlr4](src/antlr4) - A complex setup to convert the entire ANTLR4 Java runtime to Typescript. Being able to do that was the original idea of the java2typescript project. Like the simple setup it uses the `convert` script from java2typescript and a configuration file for conversion. This project requires a copy of the [ANTLR4 repository](https://github.com/antlr/antlr4) to be present in the same parent directory as this project.
+* [jdk-tests](src/jdk-tests) - This project does a custom setup for conversion. It does not use the `convert` script from java2typescript, but instead comes with an own script that allows to do more detailed setup. This project requires a copy of the [OpenJDK repository](https://github.com/openjdk/jdk) to be present in the same parent directory as this project.
 
 For each project there's a script entry in package.json to allow running them with a single mouse click (when using VS Code). Alternatively you can run them from the command line, e.g.:
 
