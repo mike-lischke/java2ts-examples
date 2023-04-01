@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "NodeNext",
+        "target": "ES2022",
+        "module": "NodeNext",
+        "outDir": "./output",
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitOverride": false,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "rootDirs": [
+            "src",
+        ]
+    },
+    "include": [
+        "src/**/*.ts",
+    ],
+    "exclude": [
+        "node_modules/**/*.*",
+        "output/**/*.*"
+    ],
+    "ts-node": {
+        "esm": true,
+    }
+}

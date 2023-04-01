@@ -1,0 +1,34 @@
+{
+    "packageRoot": "../antlr4/runtime/Java/src",
+    "include": [],
+    "exclude": [
+        "AbstractEqualityComparator.java",
+        "NotNull.java",
+        "misc/TestRig.java",
+        "MurmurHash.java"
+    ],
+    "outputPath": "../a4tstool/runtime",
+    "options": {
+        "lib": "../a4tstool/lib",
+        "convertAnnotations": false,
+        "sourceMappings": [],
+        "preferArrowFunctions": true,
+        "autoAddBraces": true,
+        "addIndexFiles": true
+    },
+    "sourceReplace": {
+        "\\n\\s+\\* {@inheritDoc}": "",
+        "\\* @return ": "* @returns ",
+        "\\* @since[^\\n*]*": "*",
+        "{@code true}": "`true`"
+    },
+    "debug": {
+        "pathForPosition": {
+            "filePattern": "TokenStreamRewriter.java",
+            "position": {
+                "row": 117,
+                "column": 11
+            }
+        }
+    }
+}
