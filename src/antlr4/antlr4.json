@@ -7,9 +7,10 @@
         "misc/TestRig.java",
         "MurmurHash.java"
     ],
-    "outputPath": "../a4tstool/runtime",
+    "outputPath": "./src/antlr4/output",
     "options": {
-        "lib": "../a4tstool/lib",
+        "prefix": "\n/* eslint-disable @typescript-eslint/naming-convention */",
+        "lib": "jree",
         "convertAnnotations": false,
         "sourceMappings": [],
         "preferArrowFunctions": true,

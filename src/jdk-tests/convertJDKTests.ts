@@ -10,9 +10,8 @@
 import path from "path";
 
 import {
-    IClassResolver, IConverterConfiguration, JavaToTypescriptConverter,
+    IClassResolver, IConverterConfiguration, JavaToTypescriptConverter, PackageSource, PackageSourceManager,
 } from "java2typescript";
-import { PackageSourceManager } from "../src/PackageSourceManager";
 
 /** Member sorting identifiers as used in the project's eslint configuration. */
 const memberOrderOptions = {
@@ -74,7 +73,7 @@ const classResolver = new Map<string, IClassResolver>([
 const convertJDKLangTests = async () => {
     const antlrToolOptions: IConverterConfiguration = {
         packageRoot: path.resolve(process.cwd(), "../jdk/test/jdk/java/lang"),
-        javaLib: "../../../../../../src",
+        javaLib: "jree",
         include: [
             "ImplicitStringConcatShapes.java",
         ],
@@ -107,7 +106,7 @@ const convertJDKLangTests = async () => {
             "ref",
             "reflect",
         ],
-        outputPath: "../jree/tests/jdk/java/lang",
+        outputPath: "./src/jdk-tests/output",
         options: {
             importResolver,
             classResolver,
