@@ -24,3 +24,13 @@ None of the example conversions produces an error free result. There are simply 
 - **Unsupported Features**: Certain constructs cannot be converted automatically (e.g. `this` calls, aka. explicit constructor invocation). The tool does as much as it can to convert the code, but some manual work is needed to make the code compiling and working.
 - **Linter Errors**: Many projects use a linter (like ESLint). Converted Java code often does not conform to popular TS linter formatting rules. It is recommended to allow formatting the generated code using your favorite linter (e.g. in VS Code) to fix the most common problems (e.g. indentation). There's a setting which allows to add arbitrary text to each generated file. This is useful to write suppression commands for linter or spelling errors. See the `configuration.options.prefix` for a field to set.
 - **Project Settings**: There's a variety of possible TypeScript settings for a project (target versions, browser vs. Node.js etc.). These can cause errors that relate to your project setup, not the conversion process as such.
+
+
+## Configuration
+
+The converter tool can be configure in two different ways:
+
+1. Using a JSON file which is passed to the `java2ts` command.
+2. A script which creates a configuration object in code.
+
+The `simple` and `antlr4` example use the first approach, while the `jdk-tests` does a custom setup (as mentioned in the previous section). Both configurations are mostly equal, except for a few settings that allow to use a function. For details about each configuration value read the [configuration documentation](https://github.com/mike-lischke/java2typescript/blob/master/doc/configuration.md) of the `java2typescript` tool.
