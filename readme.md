@@ -33,4 +33,6 @@ The converter tool can be configure in two different ways:
 1. Using a JSON file which is passed to the `java2ts` command.
 2. A script which creates a configuration object in code.
 
-The `simple` and `antlr4` example use the first approach, while the `jdk-tests` does a custom setup (as mentioned in the previous section). Both configurations are mostly equal, except for a few settings that allow to use a function. For details about each configuration value read the [configuration documentation](https://github.com/mike-lischke/java2typescript/blob/master/doc/configuration.md) of the `java2typescript` tool.
+The `simple` and `antlr4` example use the first approach, while the `jdk-tests` does a custom setup (as mentioned in the previous section). Both configurations are mostly equal, except for a few settings that allow to use a function and for entries which allow regular expressions. For details about each configuration value read the [configuration documentation](https://github.com/mike-lischke/java2typescript/blob/master/doc/configuration.md) of the `java2typescript` tool.
+
+The `simple` example shows how the minimal configuration has to look like. The converter essentially only needs the input and output paths. Everything else is for adjusting how the generated code looks like.
