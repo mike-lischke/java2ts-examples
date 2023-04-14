@@ -16,14 +16,7 @@ Before running any of the projects, you need to install the dependencies:
 
 ## Conversion
 
-None of the example conversions produces an error free result. There are simply too many conditions that influence the process. The most common problem classes that can occur are:
-
-- **Incomplete Conversion**: The source file may contain code that is not supported by java2typescript. However, the coverage of Java 11 features should be fairly complete, so this is a rare problem.
-- **Bugs**: The conversion process may contain bugs.
-- **Boxing**: Auto boxing (converting a primitive type to an arbitrary object type) in TypeScript is not possible. For example the conversion of a string literal to `java.lang.String` is a manual process. For this reason you may get errors when string literals appear in Java code where `java.lang.String` is expected. In such cases you have to manually adjust the code to deal with this situation. This is probably the most common issue with translated code.
-- **Unsupported Features**: Certain constructs cannot be converted automatically (e.g. `this` calls, aka. explicit constructor invocation). The tool does as much as it can to convert the code, but some manual work is needed to make the code compiling and working.
-- **Linter Errors**: Many projects use a linter (like ESLint). Converted Java code often does not conform to popular TS linter formatting rules. It is recommended to allow formatting the generated code using your favorite linter (e.g. in VS Code) to fix the most common problems (e.g. indentation). There's a setting which allows to add arbitrary text to each generated file. This is useful to write suppression commands for linter or spelling errors. See the `configuration.options.prefix` for a field to set.
-- **Project Settings**: There's a variety of possible TypeScript settings for a project (target versions, browser vs. Node.js etc.). These can cause errors that relate to your project setup, not the conversion process as such.
+None of the example conversions produces an error free result, for various reasons. See the [tool readme](https://github.com/mike-lischke/java2typescript#common-problems-in-converted-java-code) for more details.
 
 
 ## Configuration
