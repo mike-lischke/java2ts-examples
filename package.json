@@ -35,6 +35,7 @@
         "eslint-plugin-import": "2.27.5",
         "eslint-plugin-jsdoc": "40.1.0",
         "eslint-plugin-prefer-arrow": "1.2.3",
+        "java2typescript": "1.0.2",
         "ts-node": "10.9.1"
     },
     "dependencies": {
