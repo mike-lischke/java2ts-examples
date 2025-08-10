@@ -5,7 +5,7 @@
     "scripts": {
         "simple": "java2ts src/simple/simple.json",
         "antlr4": "java2ts src/antlr4/antlr4.json",
-        "jdk-tests": "ts-node-esm src/jdk-tests/convertJDKTests.ts",
+        "jdk-tests": "tsx src/jdk-tests/convertJDKTests.ts",
         "link java2ts": "npm link java2typescript",
         "unlink java2ts": "npm unlink java2typescript",
         "eslint": "eslint ."
@@ -29,16 +29,16 @@
     },
     "homepage": "https://github.com/mike-lischke/java2ts-examples#readme",
     "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "5.57.0",
-        "@typescript-eslint/parser": "5.57.0",
-        "eslint": "8.37.0",
-        "eslint-plugin-import": "2.27.5",
-        "eslint-plugin-jsdoc": "40.1.0",
+        "@typescript-eslint/eslint-plugin": "6.13.2",
+        "@typescript-eslint/parser": "6.13.2",
+        "eslint": "8.55.0",
+        "eslint-plugin-import": "2.29.0",
+        "eslint-plugin-jsdoc": "46.9.0",
         "eslint-plugin-prefer-arrow": "1.2.3",
-        "java2typescript": "1.0.2",
-        "ts-node": "10.9.1"
+        "java2typescript": "1.1.0",
+        "tsx": "4.20.3"
     },
     "dependencies": {
-        "jree": "1.2.2"
+        "jree": "1.3.0"
     }
 }
